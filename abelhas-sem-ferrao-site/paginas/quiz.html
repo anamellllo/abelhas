@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz · Abelhas sem ferrão</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../index.html">🐝 Abelhas sem ferrão</a>
+  <nav><a href="../index.html">← Voltar ao site</a><a class="cta on" href="quiz.html">🎮 Quiz</a></nav>
+</div></header>
+
+<main class="qpage"><div class="wrap">
+  <div class="panel" id="start">
+    <div class="center">
+      <div class="big">🐝</div>
+      <h1 style="font-size:2rem;color:var(--teal-d);margin:10px 0">Quiz da Colmeia</h1>
+      <p class="lead">12 perguntas baseadas no artigo e no banner. Cada acerto rende mel; acertos seguidos formam um combo com bônus. Será que você chega a Abelha-rainha?</p>
+      <p class="sans" id="best" style="margin-top:14px;color:var(--mut);font-size:.95rem"></p>
+      <p style="margin-top:22px"><button class="btn teal" id="go">Começar</button></p>
+    </div>
+  </div>
+
+  <div class="panel hidden" id="game">
+    <div class="hud">
+      <span class="pill" id="hq">Pergunta 1/12</span>
+      <span class="pill">🍯 <span id="hs">0</span> pts</span>
+      <span class="pill" id="hc">🔥 Combo x0</span>
+    </div>
+    <div class="prog"><i id="pb"></i></div>
+    <h2 class="qtext" id="qt"></h2>
+    <div class="opts" id="opts"></div>
+    <div class="fb" id="fb"></div>
+    <button class="btn teal next" id="nx">Próxima</button>
+  </div>
+
+  <div class="panel hidden center" id="end">
+    <div class="big pop" id="rIco"></div>
+    <p class="eyebrow" style="margin-top:12px">Seu nível</p>
+    <h2 id="rName" style="margin:2px 0"></h2>
+    <div class="score" id="rScore"></div>
+    <p class="sans" id="rInfo" style="color:var(--mut)"></p>
+    <p id="rMsg" style="margin-top:12px"></p>
+    <div class="badges" id="badges"></div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button class="btn teal" id="again">Jogar de novo</button>
+      <a class="btn" href="../index.html#introducao">Ler o artigo</a>
+    </div>
+  </div>
+</div></main>
+<script src="../js/quiz.js"></script>
+</body>
+</html>
